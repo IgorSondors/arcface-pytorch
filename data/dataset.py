@@ -11,7 +11,7 @@ import sys
 
 class Dataset(data.Dataset):
 
-    def __init__(self, root, data_list_file, phase='train', input_shape=(1, 128, 128)):
+    def __init__(self, root, data_list_file, phase='train', input_shape=(1, 32, 32)):#input_shape=(1, 128, 128)):
         self.phase = phase
         self.input_shape = input_shape
 
@@ -28,14 +28,14 @@ class Dataset(data.Dataset):
 
         if self.phase == 'train':
             self.transforms = T.Compose([
-                T.RandomCrop(self.input_shape[1:]),
+                #T.RandomCrop(self.input_shape[1:]),
                 T.RandomHorizontalFlip(),
                 T.ToTensor(),
                 normalize
             ])
         else:
             self.transforms = T.Compose([
-                T.CenterCrop(self.input_shape[1:]),
+                #T.CenterCrop(self.input_shape[1:]),
                 T.ToTensor(),
                 normalize
             ])
@@ -58,7 +58,7 @@ if __name__ == '__main__':
     dataset = Dataset(root='/data/Datasets/fv/dataset_v1.1/dataset_mix_aligned_v1.1',
                       data_list_file='/data/Datasets/fv/dataset_v1.1/mix_20w.txt',
                       phase='test',
-                      input_shape=(1, 128, 128))
+                      input_shape=(1, 32, 32))#input_shape=(1, 128, 128))
 
     trainloader = data.DataLoader(dataset, batch_size=10)
     for i, (data, label) in enumerate(trainloader):
