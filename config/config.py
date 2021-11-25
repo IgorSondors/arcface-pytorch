@@ -2,7 +2,7 @@ class Config(object):
     env = 'default'
     backbone = 'resnet18'
     classify = 'softmax'
-    num_classes = 13938
+    num_classes = 10572#13938
     metric = 'arc_margin'
     easy_margin = False
     use_se = False
@@ -11,15 +11,15 @@ class Config(object):
     display = False
     finetune = False
 
-    train_root = '/data/Datasets/webface/CASIA-maxpy-clean-crop-144/'
-    train_list = '/data/Datasets/webface/train_data_13938.txt'
+    train_root = '/home/sondors/job/casia_faces/'
+    train_list = '/home/sondors/job/arcface-pytorch/data/train_data.txt'
     val_list = '/data/Datasets/webface/val_data_13938.txt'
 
     test_root = '/data1/Datasets/anti-spoofing/test/data_align_256'
     test_list = 'test.txt'
 
-    lfw_root = '/data/Datasets/lfw/lfw-align-128'
-    lfw_test_list = '/data/Datasets/lfw/lfw_test_pair.txt'
+    lfw_root = '/home/sondors/job/lfw'
+    lfw_test_list = '/home/sondors/job/arcface-pytorch/data/my_test_pair.txt'
 
     checkpoints_path = 'checkpoints'
     load_model_path = 'models/resnet18.pth'
@@ -29,7 +29,7 @@ class Config(object):
     train_batch_size = 16  # batch size
     test_batch_size = 60
 
-    input_shape = (1, 128, 128)
+    input_shape = (1, 32, 32)#(1, 128, 128)
 
     optimizer = 'sgd'
 
