@@ -42,3 +42,4 @@ python test.py
 ### Results
 
 - far/frr plot and model evaluation [there](https://github.com/IgorSondors/arcface-pytorch/blob/master/plot_far_frr.ipynb)
+- results presentation [link](https://docs.google.com/presentation/d/1eKTyz5w_YCN-KL6vaaNb_P2N6ngCtoma1tElshKwYy8/edit?usp=sharing)
