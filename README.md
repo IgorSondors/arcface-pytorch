@@ -22,3 +22,8 @@ pytorch implement of arcface
 ### Weights
 
 - [10 epochs link](https://drive.google.com/file/d/1F_6vIFyrfy7s5tcarJBSDVdhAU6nFqP1/view?usp=sharing)
+
+### Train from scratch
+
+- cd arcface-pytorch
+- python train.py
