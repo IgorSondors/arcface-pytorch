@@ -27,3 +27,7 @@ pytorch implement of arcface
 
 - cd arcface-pytorch
 - python train.py
+
+### Results
+
+- far/frr plot and model evaluation [there](https://github.com/IgorSondors/arcface-pytorch/blob/master/plot_far_frr.ipynb)
