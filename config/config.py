@@ -23,7 +23,7 @@ class Config(object):
 
     checkpoints_path = 'checkpoints'
     load_model_path = 'models/resnet18.pth'
-    test_model_path = 'checkpoints/resnet18_110.pth'
+    test_model_path = 'checkpoints/resnet18_10.pth'#'checkpoints/resnet18_110.pth'
     save_interval = 10
 
     train_batch_size = 16  # batch size
@@ -36,7 +36,7 @@ class Config(object):
     use_gpu = True  # use GPU or not
     gpu_id = '0, 1'
     num_workers = 4  # how many workers for loading data
-    print_freq = 100  # print info every N batch
+    print_freq = 10000#100  # print info every N batch
 
     debug_file = '/tmp/debug'  # if os.path.exists(debug_file): enter ipdb
     result_file = 'result.csv'
