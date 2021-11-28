@@ -12,3 +12,7 @@ pytorch implement of arcface
 - pip install scikit-learn
 - pip install graphviz
 - pip install jupyter
+
+### Data
+
+- concatenate [train_data_1.txt](https://github.com/IgorSondors/arcface-pytorch/blob/master/data/train_data_1.txt) and [train_data_2.txt](https://github.com/IgorSondors/arcface-pytorch/blob/master/data/train_data_2.txt) as one file train_data.txt and save that inside /data
