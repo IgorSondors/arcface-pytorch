@@ -25,9 +25,20 @@ pytorch implement of arcface
 
 ### Train from scratch
 
-- cd arcface-pytorch
-- python train.py
+```python
+cd arcface-pytorch
+```
 
+```python
+python train.py
+```
+
+### Test the model on lfw pairs
+
+
+```python
+python test.py
+```
 ### Results
 
 - far/frr plot and model evaluation [there](https://github.com/IgorSondors/arcface-pytorch/blob/master/plot_far_frr.ipynb)
